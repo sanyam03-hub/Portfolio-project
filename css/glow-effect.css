@@ -32,3 +32,62 @@
 .resume-wrap:hover h2 {
   color: #ffbd39;
 }
+
+/* ============================================
+   Responsive Fix for Home Section Image
+   ============================================ */
+
+/* Default (for large screens) */
+#home-section .slider-item .img {
+  background-size: 70% auto;
+  background-position: 90% center;
+}
+
+/* For tablets and small laptops */
+@media (max-width: 992px) {
+  #home-section .slider-item .img {
+    background-size: 90% auto;
+    background-position: center top;
+  }
+}
+
+/* For mobile screens (phones) */
+@media (max-width: 768px) {
+  #home-section .slider-item .img {
+    background-size: cover !important;
+    background-position: center top !important;
+    height: 400px !important; /* adjust if needed */
+  }
+
+  #home-section .one-forth {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #home-section .text h1,
+  #home-section .text h2,
+  #home-section .text span {
+    text-align: center;
+  }
+
+  #home-section .btn {
+    display: inline-block;
+    margin: 5px auto;
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  #home-section .slider-item .img {
+    background-size: contain !important;
+    background-position: center top !important;
+    height: 350px !important;
+  }
+
+  #home-section .text h1 {
+    font-size: 1.8rem;
+  }
+  #home-section .text h2 {
+    font-size: 1rem;
+  }
+}

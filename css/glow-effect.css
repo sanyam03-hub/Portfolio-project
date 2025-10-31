@@ -93,30 +93,38 @@
 }
 
 /* ============================================
-   Hide Home Section Image on Mobile
+   Hide Home Section Image on Mobile (Final Fix)
    ============================================ */
+
 @media (max-width: 768px) {
-  /* Hide only the image part in mobile view */
-  #home-section .slider-item .img {
+  /* Hide background image container */
+  #home-section .slider-item .img,
+  #home-section .hero-wrap .img,
+  #home-section .one-third {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
   }
 
-  /* Center the text properly when image is hidden */
-  #home-section .one-forth {
+  /* Expand the text section to full width */
+  #home-section .one-forth,
+  #home-section .text {
     width: 100% !important;
     text-align: center !important;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 
   #home-section .text h1,
   #home-section .text h2,
   #home-section .text span {
-    text-align: center;
+    text-align: center !important;
   }
 
   #home-section .btn {
     display: inline-block;
-    margin: 8px auto;
+    margin: 10px auto !important;
   }
 }
 

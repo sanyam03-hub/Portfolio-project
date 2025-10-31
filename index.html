@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/glow-effect.css">
+	<link rel="stylesheet" href="css/navbar-modern.css">
+
 
 
 
@@ -55,8 +58,6 @@
   height: .7rem;
   background-color: #ffbd39;
 }
-
-
 /* Animation styles */
 #typing-animation {
   position: relative;
@@ -103,11 +104,22 @@
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
+  transform: scale(0.9);
 }
 
 .zoom-effect:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
 }
+
+.zoom-effect.fit-image {
+  background-size: contain;
+  transform: scale(0.9);
+}
+
+.zoom-effect.fit-image:hover {
+  transform: scale(1.0);
+}
+
 
 
 </style>
@@ -131,6 +143,7 @@
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+			  <li class="nav-item"><a href="#positions-section" class="nav-link"><span>Leadership</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
@@ -377,7 +390,7 @@
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2022-present</span>
-    					<h2>Bachelor of Engineering</h2>
+    					<h2>Bachelor of Technology</h2>
     					<span class="position">Vellore Institute of Technology, Chennai</span>
 						<span class="position">CGPA: 8.22 / 10</span>
     					<p class="mt-4">Coursework: Focused on Data Analytics, Machine Learning, Database Management Systems, Artificial Intelligence, and Web Technologies, gaining hands-on experience in data visualization, predictive modeling, and software development through academic and industry projects.</p>
@@ -413,56 +426,61 @@
             <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
           </div>
         </div>
+		<!-- Project 1 -->
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="https://github.com/sanyam03-hub/CLV_Prediction_Project" class="block-20 zoom-effect" style="background-image: url('images/CLVProject.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="https://github.com/sanyam03-hub/CLV_Prediction_Project">Customer Lifetime Value (CLV) Prediction Dashboard</a></h3>
+                <p>Built a CLV Prediction Dashboard using machine learning and Streamlit with 15+ visualizations for customer insights and real-time analysis.</p>
               </div>
             </div>
           </div>
+		  <!-- Project 2 -->
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              <a href="https://github.com/sanyam03-hub/Telecom-Revenue-Optimization-Model" class="block-20 zoom-effect" style="background-image: url('images/Telecom.png');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
+                <h3 class="heading"><a href="https://github.com/sanyam03-hub/Telecom-Revenue-Optimization-Model">Telecom Revenue Optimization Model</a></h3>
+                <p>Designed a data-driven model to optimize telecom revenue by predicting churn and uncovering new growth opportunities.</p>
               </div>
             </div>
           </div>
+		  <!-- Project 3 -->
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="https://github.com/sanyam03-hub/Swiggy-delivery-time-prediction" class="block-20 zoom-effect" style="background-image: url('images/hq720.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg">Power BI Sales dashboard Project for Beginners</a></h3>
-                <p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data acorss India.</p>
+                <h3 class="heading"><a href="https://github.com/sanyam03-hub/Swiggy-delivery-time-prediction">Swiggy Delivery Time Prediction Model</a></h3>
+                <p>Developed an ML model to predict Swiggy delivery times using real-world factors, integrated with FastAPI and Streamlit for live insights.</p>
               </div>
             </div>
           </div>
         </div>
 	<br>
 		<!-- added justify-content-center to center align the last two projects -->
+		 <!-- Project 4-->
 		<div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				<a href="https://github.com/sanyam03-hub/AR_reticleHIT" class="block-20 zoom-effect" style="background-image: url('images/AR tool.jpg');">
 				</a>
 				<div class="text mt-3 float-right d-block">
   
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
+				  <h3 class="heading"><a href="https://github.com/sanyam03-hub/AR_reticleHIT">AR Furniture placement tool</a></h3>
+				  <p>Developed a WebXR-based AR application that lets users visualize and interact with 3D furniture models in real-world spaces through their mobile browsers.</p>
 				</div>
 			  </div>
 			</div>
-			<div class="col-md-4 d-flex ftco-animate">
+			<!-- Project 5-->
+			<!-- <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/rishabhnmishra/customer_segmentation/blob/main/Customer_Segmentation-final.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
 				</a>
@@ -472,7 +490,7 @@
 				  <p>Developed a ML model to give various recommendations of financial products &amp; services on target customer groups.</p>
 				</div>
 			  </div>
-			</div>
+			</div> -->
 		 </div>
 	  </div>
     </section>
@@ -529,7 +547,45 @@
 			<!-- </div> -->
 		</div>
 	</section>
+	<!-- ==================== POSITIONS OF RESPONSIBILITY SECTION ==================== -->
+<section class="ftco-section" id="positions-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ftco-animate">
+        <h1 class="big big-2">Positions</h1>
+        <h2 class="mb-4">Positions of Responsibility</h2>
+        <p>Leadership roles and contributions that enhanced event coordination, teamwork, and student engagement at VIT Chennai.</p>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Joint Secretary — Wakhra Punjab Cultural Club</span>
+          <h2>March 2024 - July 2025</h2>
+          <span class="position">VIT Chennai</span>
+          <p class="mt-4">
+            Coordinated large-scale cultural events and managed cross-team collaborations, enhancing event participation by over 40%.
+            Led student engagement activities and promoted cultural diversity within the university community.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="resume-wrap ftco-animate">
+          <span class="date">Vice President — Athenaeum Club</span>
+          <h2>April 2024 -  March 2025</h2>
+          <span class="position">VIT Chennai</span>
+          <p class="mt-4">
+            Oversaw academic and literary events, fostering a learning-focused environment.
+            Guided a team of 20+ members to organize debates, workshops, and discussions aimed at improving analytical and communication skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ==================== END OF POSITIONS SECTION ==================== -->
 
 
     <section class="ftco-section" id="certifications-section">
@@ -545,12 +601,12 @@
           <!-- Certificate 1 -->
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="Coursera_data_analytics.pdf" class="block-20 zoom-effect" style="background-image: url('images/coursera-logo.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="Coursera_data_analytics.pdf">Google Advanced Data Analytics Course</a></h3>
+                <p>Completed the Google Advanced Data Analytics Professional Certificate, gaining hands-on experience in data exploration, predictive modeling, and machine learning.</p>
               </div>
             </div>
           </div>
@@ -558,12 +614,12 @@
           <!-- Certificate 2 -->
 		  <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="McKinsey.orgForward20250707-27-93w0d6.pdf" class="block-20 zoom-effect" style="background-image: url('images/McKinsey-Forward-Program.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="McKinsey.orgForward20250707-27-93w0d6.pdf">McKinsey-Forward-Program</a></h3>
+                <p>Completed McKinsey.org’s Forward Program, focused on problem-solving, effective communication, developed practical skills in critical thinking, adaptability for success in modern work environments.</p>
               </div>
             </div>
           </div>
@@ -571,12 +627,51 @@
           <!-- Certificate 3 -->
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              <a href="Oracle_datascience_Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/OCI25DSOCP.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/SQL_Music_Store_Analysis/blob/main/Music_Store_Query.sql">Digital Music Store Data Analysis using SQL</a></h3>
-                <p>Analyzed music store data using advanced SQL queires to identify gaps and increase the business growth.</p>
+                <h3 class="heading"><a href="Oracle_datascience_Certificate.pdf">Oracle Data Science Professional Certificate</a></h3>
+                <p>Earned Oracle’s Data Science Professional certification, demonstrating advanced skills in data analysis, machine learning, and model deployment on Oracle Cloud Infrastructure.</p>
+              </div>
+            </div>
+          </div>
+
+		  <!-- Certificate 4 -->
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="Oracle_GENAI_Certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/OCI25GAIOCP.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="Oracle_GENAI_Certificate.pdf">Oracle General AI Certificate</a></h3>
+                <p>Certified in Oracle’s Generative AI specialization, focused on building and deploying AI models using Oracle Cloud. Developed practical knowledge of LLMs, prompt engineering, and integrating generative AI into business applications.</p>
+              </div>
+            </div>
+          </div>
+
+		<!-- Certificate 5 -->
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="adobe ui & ux.pdf" class="block-20 zoom-effect" style="background-image: url('images/download.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="adobe ui & ux.pdf">Adobe UI & UX (Graphics Design) Certification</a></h3>
+                <p>Gained hands-on experience in UI/UX design and visual communication using Adobe tools, focusing on creating intuitive and user-centered interfaces.</p>
+              </div>
+            </div>
+          </div>
+
+		<!-- Certificate 6 -->
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="AWS certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/aws.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="AWS certificate.pdf">AWS Certified Solutions Architect Associate by FORAGE</a></h3>
+                <p>Earned AWS Certified Solutions Architect Associate certification, demonstrating expertise in designing highly available and scalable cloud solutions on AWS.</p>
               </div>
             </div>
           </div>
@@ -643,11 +738,9 @@
 				<br>
 					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
 					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <!-- <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li> -->
 					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sanyamjain03/"><span class="icon-linkedin"></span></a></li>  
 					  <li class="ftco-animate"><a href="https://leetcode.com/u/sanyamjain_03/"><span class="ion-ios-code"></span></a></li>
-					  <!-- <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li> -->
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/sanyamjain_03?igsh=MTlnOW4yZW4wYXczMw=="><span class="icon-instagram"></span></a></li>
 					</ul>
 				<br>
 		   </div>
@@ -670,6 +763,23 @@
 		</div>
 	  </footer>
 
+   <script>
+  function setNavPadding() {
+    const nav = document.getElementById('ftco-navbar');
+    if (!nav) return;
+    const navHeight = nav.getBoundingClientRect().height;
+    // set CSS variable on :root
+    document.documentElement.style.setProperty('--nav-height', navHeight + 'px');
+  }
+
+  // Run on load and on resize (debounced)
+  window.addEventListener('load', setNavPadding);
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(setNavPadding, 120);
+  });
+</script>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>

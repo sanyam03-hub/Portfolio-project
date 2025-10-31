@@ -1,0 +1,96 @@
+/* =====================================
+   Modern Navbar (Right-aligned + Glow)
+   ===================================== */
+
+#ftco-navbar {
+  background-color: #0b0b0b;
+  border-bottom: 1px solid rgba(255, 189, 57, 0.2);
+  padding: 0.8rem 3rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Brand on the far left */
+.navbar-brand {
+  color: #ffbd39 !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.6px;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px #ffbd39;
+}
+
+/* Align nav items to the far right */
+.navbar-nav {
+  margin-left: auto !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Nav links */
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 15px;
+  margin: 0 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover + active effect */
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item.active .nav-link {
+  color: #ffbd39;
+  text-shadow: 0 0 8px #ffbd39;
+}
+
+/* Underline animation */
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffbd39;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item.active .nav-link::after {
+  width: 100%;
+}
+
+/* Toggler icon for mobile view */
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 189, 57, 0.5);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  filter: brightness(1.3) sepia(1) hue-rotate(10deg) saturate(4);
+}
+
+/* =====================================
+   Quick Fix: Prevent overlap with content
+   ===================================== */
+
+/* reserve a CSS variable for JS to update */
+:root {
+  --nav-height: 80px;
+}
+
+/* Use the computed variable for body padding */
+body {
+  padding-top: var(--nav-height);
+  transition: padding-top 0.15s ease;
+}

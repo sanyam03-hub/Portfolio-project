@@ -93,11 +93,14 @@
 }
 
 /* ============================================
-   Hide Home Section Image on Mobile (Final Fix)
+   ✅ FINAL FIX: Hide Home Image on Mobile Only
    ============================================ */
 
+/* For screen widths below 768px */
 @media (max-width: 768px) {
-  /* Hide background image container */
+  /* Hide all hero/home images */
+  #home-section img,
+  #home-section .img,
   #home-section .slider-item .img,
   #home-section .hero-wrap .img,
   #home-section .one-third {
@@ -108,7 +111,7 @@
     width: 0 !important;
   }
 
-  /* Expand the text section to full width */
+  /* Make text and buttons centered */
   #home-section .one-forth,
   #home-section .text {
     width: 100% !important;
@@ -127,4 +130,5 @@
     margin: 10px auto !important;
   }
 }
+
 

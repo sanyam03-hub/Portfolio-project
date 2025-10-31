@@ -93,30 +93,33 @@
 }
 
 /* ============================================
-   ✅ FINAL FIX: Hide Home Image on Mobile Only
+   ✅ FINAL FIX: Move Image Above Text on Mobile
    ============================================ */
 
-/* For screen widths below 768px */
+/* For mobile screens (below 768px width) */
 @media (max-width: 768px) {
-  /* Hide all hero/home images */
-  #home-section img,
-  #home-section .img,
-  #home-section .slider-item .img,
-  #home-section .hero-wrap .img,
-  #home-section .one-third {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
+
+  /* Reorder layout: show image above text */
+  #home-section .slider-item .container .row {
+    display: flex;
+    flex-direction: column-reverse; /* swaps text and image order */
+    align-items: center;
   }
 
-  /* Make text and buttons centered */
-  #home-section .one-forth,
-  #home-section .text {
+  /* Adjust image appearance */
+  #home-section .slider-item .img {
+    background-size: cover !important;
+    background-position: center top !important;
+    height: 300px !important;
     width: 100% !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Center text and buttons */
+  #home-section .text {
     text-align: center !important;
-    margin: 0 auto !important;
+    margin-top: 10px;
   }
 
   #home-section .text h1,
@@ -127,8 +130,7 @@
 
   #home-section .btn {
     display: inline-block;
-    margin: 10px auto !important;
+    margin: 10px auto;
   }
 }
-
 

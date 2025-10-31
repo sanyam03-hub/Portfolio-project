@@ -92,8 +92,31 @@
   }
 }
 
+/* ============================================
+   Hide Home Section Image on Mobile
+   ============================================ */
 @media (max-width: 768px) {
-  .home-image {
-    display: none;
+  /* Hide only the image part in mobile view */
+  #home-section .slider-item .img {
+    display: none !important;
+  }
+
+  /* Center the text properly when image is hidden */
+  #home-section .one-forth {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+
+  #home-section .text h1,
+  #home-section .text h2,
+  #home-section .text span {
+    text-align: center;
+  }
+
+  #home-section .btn {
+    display: inline-block;
+    margin: 8px auto;
   }
 }
+

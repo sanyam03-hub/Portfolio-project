@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-You can view the live portfolio at: [https://sanyamjainportfolio.com](https://sanyamjainportfolio.com) *(Add your actual deployment URL here)*
+You can view the live portfolio at: [https://sanyam03-hub.github.io/Portfolio-project/]
 
 ## 📋 Table of Contents
 

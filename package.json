@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio website! This project showcases my skills, projects, and experiences as a Data Analyst and Data Scientist.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanyam03-hub/Portfolio-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanyam03-hub/Portfolio-project/issues"
+  },
+  "homepage": "https://github.com/sanyam03-hub/Portfolio-project#readme",
+  "dependencies": {
+    "puppeteer": "^24.29.1"
+  }
+}
